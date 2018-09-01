@@ -5,25 +5,25 @@
 
 # Registration
 registration:
-    disabled: '&cRegister dalam game tidak diaktifkan!'
+    disabled: '&cPendaftaran didalam game tidak diaktifkan!'
     name_taken: '&cKamu telah mendaftarkan username ini!'
     register_request: '&3Silahkan mendaftar ke server menggunakan command "/register <password> <ulangiPassword>"'
-    # TODO command_usage: '&cUsage: /register <password> <ConfirmPassword>'
-    reg_only: '&4Hanya pengguna terdaftar yg bisa bergabung! Silahkan kunjungi http://example.com untuk mendaftar!'
-    success: '&2Register berhasil!'
-    # TODO kicked_admin_registered: 'An admin just registered you; please log in again'
+    command_usage: '&cPenggunaan: /register <password> <ulangiPassword>'
+    reg_only: '&4Hanya pengguna terdaftar yang bisa bergabung! Silahkan kunjungi http://example.com untuk mendaftar!'
+    success: '&2Pendaftaran berhasil!'
+    kicked_admin_registered: 'Admin telah mendaftarkan dirimu; Silahkan login kembali!'
 
 # Password errors on registration
 password:
     match_error: '&cPassword tidak cocok, silahkan periksa dan ulangi kembali!'
-    name_in_password: '&cKamu tidak bisa menggunakan namamu sebagai password, silahkan coba yg lain...'
-    unsafe_password: '&cPassword yg kamu pilih tidak aman, silahkan coba yg lain...'
-    # TODO forbidden_characters: '&4Your password contains illegal characters. Allowed chars: %valid_chars'
-    wrong_length: '&cPassword kamu terlalu panjang/pendek! Silahkan pilih yg lain!'
+    name_in_password: '&cKamu tidak bisa menggunakan namamu sebagai password, silahkan coba yang lain...'
+    unsafe_password: '&cPassword yang kamu pilih tidak aman, silahkan coba yang lain...'
+    forbidden_characters: '&4Password yang kamu pilih memiliki karakter ilegal. Karakter yang diperbolehkan: %valid_chars'
+    wrong_length: '&cPassword kamu terlalu panjang/pendek! Silahkan pilih yang lain!'
 
 # Login
 login:
-    command_usage: '&cUsage: /login <password>'
+    command_usage: '&cPenggunaan: /login <password>'
     wrong_password: '&cPassword salah!'
     success: '&2Login berhasil!'
     login_request: '&cSilahkan login menggunakan command "/login <password>"'
@@ -31,37 +31,37 @@ login:
 
 # Errors
 error:
-    # TODO denied_command: '&cIn order to use this command you must be authenticated!'
-    # TODO denied_chat: '&cIn order to chat you must be authenticated!'
-    unregistered_user: '&cUser ini belum terdaftar!'
+    denied_command: '&cUntuk menggunakan command ini, kamu harus terautentikasi!'
+    denied_chat: '&cUntuk mengobrol, kamu harus terautentikasi!'
+    unregistered_user: '&cPengguna ini belum terdaftar!'
     not_logged_in: '&cKamu belum login!'
     no_permission: '&4Kamu tidak mempunyai izin melakukan ini!'
     unexpected_error: '&4Terjadi kesalahan tak dikenal, silahkan hubungi Administrator!'
     max_registration: '&Kamu telah mencapai batas maksimum pendaftaran di server ini!'
     logged_in: '&cKamu telah login!'
     kick_for_vip: '&3Player VIP mencoba masuk pada saat server sedang penuh!'
-    # TODO tempban_max_logins: '&cYou have been temporarily banned for failing to log in too many times.'
+    tempban_max_logins: '&cKamu telah dibanned sementara dikarenakan gagal untuk login beberapa kali.'
 
 # AntiBot
 antibot:
-    # TODO kick_antibot: 'AntiBot protection mode is enabled! You have to wait some minutes before joining the server.'
-    auto_enabled: '&4[AntiBotService] AntiBot diaktifkan dikarenakan banyak koneksi yg diterima!'
+    kick_antibot: 'Proteksi AntiBot diaktifkan! Kamu harus menunggu beberapa menit sebelum masuk ke server.'
+    auto_enabled: '&4[AntiBotService] AntiBot diaktifkan dikarenakan banyak koneksi yang diterima!'
     auto_disabled: '&2[AntiBotService] AntiBot dimatikan setelah %m menit!'
 
 # Unregister
 unregister:
     success: '&cUnregister berhasil!'
-    # TODO command_usage: '&cUsage: /unregister <password>'
+    command_usage: '&cPenggunaan: /unregister <password>'
 
 # Other messages
 misc:
     account_not_activated: '&cAkunmu belum diaktifkan, silahkan periksa email kamu!'
     password_changed: '&2Berhasil mengubah password!'
-    logout: '&2Berhasil logout!'
+    logout: '&2Berhasil untuk logout!'
     reload: '&2Konfigurasi dan database telah dimuat ulang!'
-    usage_change_password: '&cUsage: /changepassword <passwordLama> <passwordBaru>'
-    # TODO accounts_owned_self: 'You own %count accounts:'
-    # TODO accounts_owned_other: 'The player %name has %count accounts:'
+    usage_change_password: '&cPenggunaan: /changepassword <passwordLama> <passwordBaru>'
+    accounts_owned_self: 'Kamu memiliki %count akun:'
+    accounts_owned_other: 'Player bernama %name memiliki %count akun:'
 
 # Session messages
 session:
@@ -70,15 +70,16 @@ session:
 
 # Error messages when joining
 on_join_validation:
-    # TODO same_ip_online: 'A player with the same IP is already in game!'
-    same_nick_online: '&4Username yg sama telah bermain di server ini!'
+    same_ip_online: 'Player dengan IP yang sama telah ada di game!'
+    same_nick_online: '&4Username yang sama telah bermain di server ini!'
+    same_nick_online: '&4Username yang sama telah bermain di server ini!'
     name_length: '&4Username kamu terlalu panjang atau terlalu pendek!'
-    characters_in_name: '&4Username kamu mengandung karakter illegal. Karakter yg diijinkan: %valid_chars'
+    characters_in_name: '&4Username kamu mengandung karakter illegal. Karakter yang diizinkan: %valid_chars'
     kick_full_server: '&4Server sedang penuh, silahkan coba lagi nanti!'
-    # TODO country_banned: '&4Your country is banned from this server!'
-    # TODO not_owner_error: 'You are not the owner of this account. Please choose another name!'
-    # TODO invalid_name_case: 'You should join using username %valid, not %invalid.'
-    # TODO quick_command: 'You used a command too fast! Please, join the server again and wait more before using any command.'
+    country_banned: '&4Negara kamu diblokir dari server ini!'
+    not_owner_error: 'Kamu bukan pemilik dari akun ini. Dimohon untuk menggunakan nama lain!'
+    invalid_name_case: 'Kamu seharusnya masuk menggunakan username %valid, bukan %invalid.'
+    quick_command: 'Kamu menggunakan command terlalu cepat! Tolong untuk masuk kembali dan tunggu sebentar sebelum menggunakan command apapun.'
 
 # Email
 email:
